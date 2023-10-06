@@ -1,0 +1,26 @@
+.homeContent {
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+    width: auto;
+    margin: 0;
+   
+    
+    
+}
+.intro{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.greener{
+color: green;
+}
+
+.cleaner{
+color: blue;
+}
+
+.saving{
+color: yellow;
+}

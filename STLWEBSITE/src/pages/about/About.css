@@ -1,0 +1,12 @@
+.services {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+}
+
+.aboutContent {
+    display: flex;
+
+}

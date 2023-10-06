@@ -1,33 +1,114 @@
-*{
-    box-sizing: border-box;
-
-}
-
-body {
+body{
     margin: 0;
-}
-
-.nav {
-    background-color: #333;
-    color:white;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.site-title {
-    font-size: 2rem;
-}
-
-.nav ul {
     padding: 0;
-    margin: 0;
-    list-style: none;
+}
+.navbar {
+    
     display: flex;
-    gap: 1rem;
+    height: 5%;
+    width: auto;
+    margin:0 auto;
+    padding: 1rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    max-width: auto;
+    z-index: 1;
+    background-color: lightblue;
 }
 
-.nav a {
-    color: inherit;
+.logo {
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    
+
+}
+
+.linkItem {
+    margin: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.linkItem:hover {
+    color: grey;
+    padding-bottom: 0.5rem;
+    border: black;
+    border-bottom: 2px solid grey;
+}
+
+.contactImg {
+    background-color: white;
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    padding-right: 0.5rem;
+
+}
+
+.contactButton {
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: larger;
+    border: 2px solid black;
+   
+
+}
+
+.active {
+    color: grey;
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.25rem;
+}
+
+.hamburgerMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.mobMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background-color: lightblue;
+    border-radius: 1rem;
+}
+
+.linkItemMobile {
+    color: grey;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;    
+    background-color: lightblue;
+}
+
+@media screen and (max-width:720px) {
+    
+    .mobMenu, .hamburgerMenu {
+        display: flex;
+    }
+
+    .linkItem {
+        display: none;
+    }
+
+    .contactButton {
+        display: none;
+    }
+
 }

@@ -1,40 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 import './navbar.css'
+import stlogo from '../../images/stlogo.png';
+import contact from '../../images/contact.png';
+import hamburger from './menu.png';
 
 const Navbar = () => {
-    return(
-        <header className="bg-gray-800 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          
-            S&T Lighting
-          
-        
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#About" className="mr-5 hover:text-white">
-            About Us
-          </a>
-          <a href="#FAQ" className="mr-5 hover:text-white">
-            FAQ
-          </a>
-          <a href="#Contacts" className="mr-5 hover:text-white">
-            Contact Us
-          </a>
-          <a href="#Products" className="mr-5 hover:text-white">
-            Products
-          </a>
-          <a href="#Clients" className="mr-5 hover:text-white">
-            Clients
-          </a>
-          <a href="#Testimonials" className="mr-5 hover:text-white">
-            Testimonials
-          </a>
-          <a href="#Casestudy" className="mr-5 hover:text-white">
-            Case Studies
-          </a>
+  
+  const[showMenu, setShowMenu] = useState(false);
+
+  return(
+    
+        <nav className="navbar">
+          <img src={stlogo} alt="stlightinglogo" className="logo"/>
+        <div className="nav-links">
+          <Link activeClass="active" to="About" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
+          <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>FAQ</Link>
+          <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Products</Link>
+          <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
+          <Link activeClass="active" to="Clients" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
+          <Link activeClass="active" to="Casestudy" className="linkItem" spy={true} smooth={true} offset={-50}>Case Studies</Link>
+        </div>
+
+        <button className="contactButton" onClick={ () => {
+          document.getElementById('contact').scrollIntoView({behavior : 'smooth'}); 
+        }}>
+          <img src={contact} alt="contactus" className="contactImg" />
+          Contact Us
+        </button>
+
+        <img src={hamburger} alt="mobileMenu" className="hamburgerMenu" onClick={()=>setShowMenu(!showMenu)}/>
+        <div className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
+          <Link activeClass="active" to="About" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
+          <Link activeClass="active" to="FAQ" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>FAQ</Link>
+          <Link activeClass="active" to="Products" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Products</Link>
+          <Link activeClass="active" to="Testimonials" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Testimonials</Link>
+          <Link activeClass="active" to="Casestudy" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Case Studies</Link>
+          <Link activeClass="active" to="Clients" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Clients</Link>
+        </div>
+
         </nav>
         
-      </div>
-    </header>
+      
+
     );
 }
 

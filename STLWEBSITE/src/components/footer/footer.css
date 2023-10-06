@@ -1,0 +1,16 @@
+.footer {
+  width: 100vw;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: medium;
+  border-top: 0.25rem solid black;
+  margin-top: 2rem;
+}
+
+.footerImg {
+ width: 10vw;
+ height: 10vh;
+}

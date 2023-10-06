@@ -1,0 +1,91 @@
+
+
+#Clients {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientTitlePage {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+.clientNames, .contactDesc {
+    font-weight: 300;
+    font-size: 3rem;
+    font-style: italic;
+    justify-content: center;
+    text-align: center;
+}
+
+.clientImgs {
+    margin: 2rem 0;
+    display: flex;
+}
+
+.clientLogoImg {
+    object-fit: cover;
+    width: 7rem;
+    min-width: 3rem;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;;
+}
+
+.clientInputName, .clientInputEmail, .clientMessage {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: lightblue;
+}
+
+::placeholder {
+    color: black;
+}
+
+.submitMessage {
+    background: rgbs;
+    border:none;
+    padding: 0.1rem 4rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.submitText {
+    color: black;
+    font-size: medium;
+}
+
