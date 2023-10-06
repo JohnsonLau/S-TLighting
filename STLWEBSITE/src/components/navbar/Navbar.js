@@ -19,7 +19,10 @@ const Navbar = () => {
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Products</Link>
           <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
           <Link activeClass="active" to="Clients" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
-          <Link activeClass="active" to="Casestudy" className="linkItem" spy={true} smooth={true} offset={-50}>Case Studies</Link>
+          <a  activeClass="active" className="linkItem" href="https://www.mynaturaled.com/casestudy.html">
+          {/* <Link activeClass="active" to="Casestudy" className="linkItem" spy={true} smooth={true} offset={-50}>Case Studies</Link> */}
+          Case Study
+          </a>
         </div>
 
         <button className="contactButton" onClick={ () => {

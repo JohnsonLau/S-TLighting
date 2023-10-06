@@ -6,7 +6,6 @@ import Testimonials from './pages/testimonials/Testimonials';
 import FAQ from './pages/faq/Faq';
 import Products from './pages/products/Products';
 import Clients from './pages/clients/Clients';
-import Casestudy from './pages/casestudy/Casestudy';
 import Footer from './components/footer/Footer';
 
 
@@ -20,7 +19,6 @@ function App() {
       <Products/>
       <Testimonials/>
       <Clients/>
-      <Casestudy/>
       <Footer/>
       </div>
   );
