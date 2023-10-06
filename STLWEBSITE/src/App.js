@@ -8,7 +8,7 @@ import Products from './pages/products/Products';
 import Clients from './pages/clients/Clients';
 import Footer from './components/footer/Footer';
 
-
+// setup components
 function App() {
   return (
     <div className='App'>
