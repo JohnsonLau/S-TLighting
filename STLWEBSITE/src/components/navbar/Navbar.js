@@ -12,7 +12,7 @@ const Navbar = () => {
   return(
     
         <nav className="navbar">
-          <img src={stlogo} alt="stlightinglogo" className="logo"/>
+          <img src={stlogo} alt="stlightinglogo" className="logo" />
         <div className="nav-links">
           <Link activeClass="active" to="About" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
           <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>FAQ</Link>

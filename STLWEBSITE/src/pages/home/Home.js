@@ -5,9 +5,10 @@ const Home = () => {
     return (
        
             <div className='homeContent'>
-                <span className="intro">Eco Friendly Solutions</span> 
-                <span className="intro">A Brighter Future</span>
-                <span className="intro">World Class Service</span>
+                <h1 className="typewriter">S & T Lighting - Your Lighting Needs.</h1>
+                <h3 className="typewriter">A Brighter Future Ahead</h3>
+              
+             
             </div>
         
     );
