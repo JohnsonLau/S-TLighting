@@ -14,13 +14,13 @@ const Navbar = () => {
         <nav className="navbar">
           <img src={stlogo} alt="stlightinglogo" className="logo" />
         <div className="nav-links">
-          <Link activeClass="active" to="About" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
+          <Link activeClass="active" to="about" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
           <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Products</Link>
           <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
           <Link activeClass="active" to="Clients" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
           <a  activeClass="active" className="linkItem" href="https://www.mynaturaled.com/casestudy.html">
-          {/* <Link activeClass="active" to="Casestudy" className="linkItem" spy={true} smooth={true} offset={-50}>Case Studies</Link> */}
+
           Case Study
           </a>
         </div>
@@ -34,12 +34,15 @@ const Navbar = () => {
 
         <img src={hamburger} alt="mobileMenu" className="hamburgerMenu" onClick={()=>setShowMenu(!showMenu)}/>
         <div className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
-          <Link activeClass="active" to="About" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
+          <Link activeClass="active" to="about" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
           <Link activeClass="active" to="FAQ" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Products</Link>
-          <Link activeClass="active" to="Testimonials" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Testimonials</Link>
-          <Link activeClass="active" to="Casestudy" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Case Studies</Link>
-          <Link activeClass="active" to="Clients" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Clients</Link>
+          <Link activeClass="active" to="Testimonials" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Testimonials</Link> 
+         <Link activeClass="active" to="Clients" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Clients</Link>
+         <a  activeClass="active" className="linkItemMobile" href="https://www.mynaturaled.com/casestudy.html">
+
+          Case Study
+          </a>
         </div>
 
         </nav>

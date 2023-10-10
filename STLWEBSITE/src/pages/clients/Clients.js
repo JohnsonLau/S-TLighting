@@ -57,9 +57,9 @@ const Clients = () => {
                     <h1 className="contactPageTitle">Contact Us</h1>
                     <p className="contactDesc">Email or Call Us Today!<br></br> 604-802-6019 </p>
                     <form className="contactForm" ref={form} onSubmit={sendEmail}>
-                        <input type="text" className="clientInputName" placeholder="Name/Company Name" name='your_name'/>
-                        <input type="email" className="clientInputEmail" placeholder="Email" name='your_email'/>
-                        <textarea className="clientMessage" name="message" rows="5" placeholder="Your Message" />
+                        <input required type="text" className="clientInputName" placeholder="Name/Company Name" name='your_name'/>
+                        <input required type="email" className="clientInputEmail" placeholder="Email" name='your_email'/>
+                        <textarea required className="clientMessage" name="message" rows="5" placeholder="Your Message" />
                         <button type="submit" value='Send'className="submitMessage"><p className="submitText">Submit</p></button>
                     </form>
                 </div>
