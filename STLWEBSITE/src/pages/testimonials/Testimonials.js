@@ -20,7 +20,6 @@ const Testimonials = () => {
                 
 
 <div class="projcard-container">
-    
     <div class="projcard projcard-orange">
       <div class="projcard-innerbox">
         <img class="projcard-img" src={pharma} alt="pharmasave logo"/>

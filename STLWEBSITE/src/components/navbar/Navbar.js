@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Products</Link>
           <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
           <Link activeClass="active" to="Clients" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
-          <a  activeClass="active" className="linkItem" href="https://www.mynaturaled.com/casestudy.html">
+          <a  activeClass="active" className="linkItem" href="https://www.mynaturaled.com/casestudy.html" target="_blank" rel="noreferrer">
 
           Case Study
           </a>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link activeClass="active" to="Products" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Products</Link>
           <Link activeClass="active" to="Testimonials" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Testimonials</Link> 
          <Link activeClass="active" to="Clients" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Clients</Link>
-         <a  activeClass="active" className="linkItemMobile" href="https://www.mynaturaled.com/casestudy.html">
+         <a  activeClass="active" className="linkItemMobile" href="https://www.mynaturaled.com/casestudy.html" target="_blank" rel="noreferrer">
 
           Case Study
           </a>

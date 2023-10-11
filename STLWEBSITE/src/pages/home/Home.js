@@ -5,8 +5,8 @@ const Home = () => {
     return (
        
             <div className='homeContent'>
-                <h1 className="typewriter">S & T Lighting - Your Lighting Needs.</h1>
-                <h3 className="typewriter">A Brighter Future Ahead</h3>
+                <h1 className="fade">S & T Lighting - Your Lighting Needs.</h1>
+                <h2 className="fade">A Brighter Future Ahead</h2>
               
              
             </div>

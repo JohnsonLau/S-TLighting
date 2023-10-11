@@ -15,6 +15,7 @@ import runners from './ClientLogos/runnersden.jpg';
 import emailjs from '@emailjs/browser';
 
 
+
 const Clients = () => {
 
     const form = useRef();
@@ -32,20 +33,21 @@ const Clients = () => {
         });
     };
 
+   
     return (
+
         <section className='contactPage'>
             <div id='Clients'>
                 <h1 className="clientTitlePage">Our Clients</h1>
                 <p className="clientNames">We have had the opportunity to work with these incredible companies.</p>
                 <div className="clientImgs">
+
                 <img src = {abc} alt="Abc dollar store" className="clientLogoImg"/>
                 <img src = {atlas} alt="Atlas roofing" className="clientLogoImg"/>
                 <img src = {dollar} alt="dollarstore" className="clientLogoImg"/>
                 <img src = {grill} alt="Coquitlam grill" className="clientLogoImg"/>
                 <img src = {langley} alt="Langley Industrial Park" className="clientLogoImg"/>
                 <img src = {newpacific} alt="new pacific supermarket" className="clientLogoImg"/>
-                </div>
-                <div className="clientImgs">
                 <img src = {nofrills} alt="Nofrills" className="clientLogoImg"/>
                 <img src = {oktire} alt="OK Tire" className="clientLogoImg"/>
                 <img src = {pharmasave} alt="Pharmasave" className="clientLogoImg"/>
@@ -53,6 +55,7 @@ const Clients = () => {
                 <img src = {richmond} alt="Richmond Warehouse" className="clientLogoImg"/>
                 <img src = {runners} alt="Port Moody Runners Den" className="clientLogoImg"/>
                 </div>
+
                 <div id='contact'>
                     <h1 className="contactPageTitle">Contact Us</h1>
                     <p className="contactDesc">Email or Call Us Today!<br></br> 604-802-6019 </p>
