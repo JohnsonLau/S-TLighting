@@ -13,5 +13,5 @@
   }
   
   .scroll-to-top-button:hover {
-    background-color: grey;
+    border: 1px solid black;
   }

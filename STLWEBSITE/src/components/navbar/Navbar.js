@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Products</Link>
           <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
-          <Link activeClass="active" to="Clients" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
+          <Link activeClass="active" to="contactPage" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
           <a  activeClass="active" className="linkItem" href="https://www.mynaturaled.com/casestudy.html" target="_blank" rel="noreferrer">
 
           Case Study

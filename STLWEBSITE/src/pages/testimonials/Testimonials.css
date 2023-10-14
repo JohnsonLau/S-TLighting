@@ -11,6 +11,7 @@ body {
   .projcard-container,
   .projcard-container * {
     box-sizing: border-box;
+    float: left;
   }
   .projcard-container {
     margin-left: auto;
@@ -189,16 +190,20 @@ body {
       width: 100%;
   }
   .projcard-img {
-      width: 100%;
+      width: 0%;
   }
   .projcard-textbox {
-      left: 0;
+    padding: 1rem;
+      left: auto;
       width: 100%;
   }
-  /* Adjust other styles as needed for smaller screens */
+  .projcard:nth-child(2n) .projcard-textbox {
+    right: auto;
+  }
+
 }
 
-/* Media Query for screens up to 576px wide (typically mobile) */
+
 @media screen and (max-width: 576px) {
   .projcard-container {
       margin: 20px 0;
@@ -209,5 +214,5 @@ body {
   .projcard-subtitle {
       font-size: 14px;
   }
-  /* Adjust other styles as needed for smaller screens */
+
 }

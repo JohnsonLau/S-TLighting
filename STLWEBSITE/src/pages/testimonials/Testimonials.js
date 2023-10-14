@@ -5,6 +5,7 @@ import pharma from "../clients/ClientLogos/pharmasave.jpg";
 import runnersden from "../clients/ClientLogos/runnersden.jpg";
 import atlas from "../clients/ClientLogos/atlas.jpg";
 import whistler from "../clients/ClientLogos/whistlerwater.jpg";
+import CIMS from "../clients/ClientLogos/CIMS.png";
 
 
 const Testimonials = () => {
@@ -63,9 +64,21 @@ const Testimonials = () => {
           <div class="projcard-title">Whistler Water</div>
           <div class="projcard-subtitle">Lena - Owner</div>
           <div class="projcard-bar"></div>
-          <div class="projcard-description">"S & T Lighting's service was a godsend. Just when we were in desperate need of upgrading our lighting for the annual certification program and we were short of funds, Wing and his team passed by our building and came in with an amazing proposal. They are well-versed in the BC Hydro incentive program and helped us secure the much needed fund, and we were able to complete the big project with minimal investment. Now our whole plant is so bright, and our hydro bills are less! We can’t say enough how grateful we are to have had S & T Lighting’s help. They have a wonderful team, provide prompt, most cost-effective and professional services. You don't want to try another company. They are probably not a huge company. But they are the best!"</div>
+          <div class="projcard-description">"S & T Lighting's service was a godsend. Just when we were in desperate need of upgrading our lighting for the annual certification program and we were short of funds, Wing and his team passed by our building and came in with an amazing proposal. They are well-versed in the BC Hydro incentive program and helped us secure the much needed fund, and we were able to complete the big project with minimal investment. Now our whole plant is so bright, and our hydro bills are less! We can't say enough how grateful we are to have had S & T Lighting's help. They have a wonderful team, provide prompt, most cost-effective and professional services. You don't want to try another company. They are probably not a huge company. But they are the best!"</div>
           <div class="projcard-tagbox">
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projcard projcard-grey">
+      <div class="projcard-innerbox">
+        <img class="projcard-img" src={CIMS} alt="CIMS"/>
+        <div class="projcard-textbox">
+          <div class="projcard-title">CIMS</div>
+          <div class="projcard-subtitle">Herb - Company President </div>
+          <div class="projcard-bar"></div>
+          <div class="projcard-description">"S & T Lighting provided honest and professional work for our building lighting upgrade, they started with a free quotation with a very fair price, and assist us to get incentives from BC Hydro for the project. I am so impressed with their excellent service. I am happy to be their reference."</div>
         </div>
       </div>
     </div>

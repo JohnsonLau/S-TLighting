@@ -98,15 +98,16 @@
 }
 
 ::placeholder {
-    color: black;
+    color: rgb(40, 40, 40);
 }
 
 .submitMessage {
-    background: rgbs;
+    background: white;
     border:none;
     padding: 0.1rem 4rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
+    border: 1px solid grey;
 }
 
 .submitText {
