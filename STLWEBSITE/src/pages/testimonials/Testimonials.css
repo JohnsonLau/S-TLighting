@@ -11,7 +11,6 @@ body {
   .projcard-container,
   .projcard-container * {
     box-sizing: border-box;
-    float: left;
   }
   .projcard-container {
     margin-left: auto;
@@ -120,9 +119,10 @@ body {
   .projcard-subtitle {
     font-family: 'Voces', 'Open Sans', arial, sans-serif;
     color: #888;
+
   }
   .projcard-bar {
-    left: -2px;
+    left: 1rem;
     width: 50px;
     height: 5px;
     margin: 10px 0;
@@ -169,7 +169,7 @@ body {
     margin-bottom: 1rem;
     justify-content: center;
     text-align: center;
-    border-top: 5px solid black;
+    
     border-bottom: 5px solid black;
   }
 

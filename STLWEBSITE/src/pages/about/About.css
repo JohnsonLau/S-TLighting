@@ -5,15 +5,36 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     text-align: center;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
 }
 
-.services {
-list-style: none;
-text-align: center;
+.servicesListWrapper{
+    list-style-type: none;
+    margin-left: 20px;
+    color: #555;
 }
 
 
+.aboutHeader {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+    
+    border-bottom: 5px solid black;
+}
 
+.aboutText {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.serviceList {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}

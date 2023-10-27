@@ -12,16 +12,24 @@ const FAQ = () => {
   
     const faqData = [
       {
-        question: "Section 1",
-        answer: "Lorem ipsum for Section 1...",
+        question: "I'm an end-customer, can you purchase products directly from you?",
+        answer: "Yes.  We sell directly to end-customer.",
       },
       {
-        question: "Section 2",
-        answer: "Lorem ipsum for Section 2...",
+        question: "Do you take credit card or debit card for payment?",
+        answer: "No. We only take cash or cheque upon product delivery.",
       },
       {
-        question: "Section 3",
-        answer: "Lorem ipsum for Section 3...",
+        question: "Do you know about the BC Hydro Incentive program, and how to apply for it?",
+        answer: "Yes.  We are BC Hydro Alliance of Energy Professional.  We have assisted hundreds commercial customers to apply for the incentives.",
+      },
+      {
+        question: "Do you take credit card or debit card for payment?",
+        answer: "Unfortunately, we only take cash or cheque upon product delivery.",
+      },
+      {
+        question: "Does the lighting product come with warranty?",
+        answer: "Yes, warranty is provided by the lighting manufacturer.",
       },
     ];
    

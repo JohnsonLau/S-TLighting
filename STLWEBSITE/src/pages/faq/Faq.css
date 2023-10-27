@@ -1,5 +1,6 @@
  /* Style the buttons that are used to open and close the accordion panel */
  .accordion {
+    background: linear-gradient(to top, #ace0f9  0%,#fff1eb  100%); 
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -8,7 +9,7 @@
     text-align: left;
     border: none;
     outline: none;
-    transition: 2s ease-out;
+    font-size: large;
     margin: 0.25rem;
   }
   
@@ -19,16 +20,19 @@
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding: 0 3rem;
+    padding: 0 0rem;
     background-color: white;
     display: none;
     overflow: hidden;
+    
   } 
 
    /* Style for the open panel */
    .panel.open {
-    display: block; 
-    transition: max-height 3s ease-out;
+    margin: 0.5rem;
+    display: flex; 
+    transition: height 2s ease-out;
+    font-size: large;
   }
 
 .faqHeader {
@@ -36,7 +40,7 @@
     margin-bottom: 1rem;
     justify-content: center;
     text-align: center;
-    border-top: 5px solid black;
+   
     border-bottom: 5px solid black;
 }
 

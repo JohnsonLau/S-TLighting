@@ -1,6 +1,17 @@
 import React from "react";
 import './Products.css';
-
+import cna from './logos/cna.png';
+import plusrite from './logos/plusrite.png';
+import natura from './logos/natura.png';
+import etlin from './logos/etlin.png';
+import ndr from './logos/ndr.png';
+import alloy from './logos/alloy.png';
+import kuzco from './logos/kuzco.jpg';
+import corelite from './logos/cooper.png';
+import phillips from './logos/phillips.png';
+import lumenstar from './logos/lumenstar.png';
+import turo from './logos/turolight.png';
+import luxlogic from './logos/luxlogic.png';
 const Products = () => {
     return (
         
@@ -9,64 +20,67 @@ const Products = () => {
          <div className='productGrid'>
                 <div className="grid-item">
                     <a href="https://plusriteusa.com/" target="_blank" rel="noreferrer">
-                    <h2>PLUSRITE</h2>
+                    <img className="plusrite" src={plusrite} alt="plusrite"></img> 
                     </a>
                    
                 </div>
                 <div className="grid-item">
                     <a href="https://www.mynaturaled.com/index.html" target="_blank" rel="noreferrer">
-                        
-                        <h2>NATURALED</h2>
+                        <img className="natura" src={natura} alt='natura'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://www.cnalighting.com/" target="_blank" rel="noreferrer" >
-                        <h2>CNA</h2>
+                        <img className="logoimg" src = {cna} alt='cna'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://etlin-daniels.com/" target="_blank" rel="noreferrer">
-                        <h2>ETLIN DANIELS</h2>
+                    <img className="etlin" src = {etlin} alt='etlin'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://ndrelectric.com/" target="_blank" rel="noreferrer">
-                        <h2>NDR Lighting</h2>
+                    <img className="logoimg" src = {ndr} alt='ndr'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://www.luxlogiclighting.com/" target="_blank" rel="noreferrer">
-                        <h2>LUXLOGIC</h2>
+                        <img className="logoimg" src={luxlogic} alt='luxlogic'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://lumenstarled.com/" target="_blank" rel="noreferrer">
-                        <h2>LUMENSTAR</h2>
+                        <img className="logoimg" src={lumenstar} alt='lumenstar'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://kuzcolighting.com/" target="_blank" rel="noreferrer">
-                        <h2>KUZCO</h2>
+                        <img className="kuzco" src={kuzco} alt='kuzco'></img>
+                      
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://www.alloyled.com/" target="_blank" rel="noreferrer">
-                        <h2>ALLOY LED</h2>
+                    <img className="logoimg" src={alloy} alt='alloy'></img>
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://www.turolight.com/" target="_blank" rel="noreferrer">
-                        <h2>TUROLIGHT</h2>
+                        <img className="turo" src={turo} alt='turo'></img> 
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://www.lighting.philips.com/home" target="_blank" rel="noreferrer">
-                        <h2>PHILLIPS</h2>
+                        <img className="logoimg" src={phillips} alt='phillips'></img>
+                        
+                        
                     </a>
                 </div>
                 <div className="grid-item">
                     <a href="https://www.cooperlighting.com/global/brands/corelite" target="_blank" rel="noreferrer">
-                        <h2>CORELITE</h2>
+                        <img className="cooper" src={corelite} alt="corelite"></img>
+                        
                     </a>
                 </div>
         </div>

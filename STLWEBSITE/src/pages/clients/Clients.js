@@ -15,7 +15,6 @@ import runners from './ClientLogos/runnersden.jpg';
 import emailjs from '@emailjs/browser';
 
 
-
 const Clients = () => {
 
     const form = useRef();
@@ -32,14 +31,18 @@ const Clients = () => {
             console.log(error.text);
         });
     };
+    
 
    
+    
     return (
 
         <section className='contactPage'>
             <div id='Clients'>
                 <h1 className="clientTitlePage">Our Clients</h1>
                 <p className="clientNames">We have had the opportunity to work with these incredible companies.</p>
+               
+                <div class="scroll-container">
                 <div className="clientImgs">
 
                 <img src = {abc} alt="Abc dollar store" className="clientLogoImg"/>
@@ -54,7 +57,11 @@ const Clients = () => {
                 <img src = {poco} alt="Port Coquitlam Industrial Park" className="clientLogoImg"/>
                 <img src = {richmond} alt="Richmond Warehouse" className="clientLogoImg"/>
                 <img src = {runners} alt="Port Moody Runners Den" className="clientLogoImg"/>
-                </div>
+
+            </div>
+            
+            </div>
+            <p className="clientNames">And many more!</p>
 
                 <div id='contact'>
                     <h1 className="contactPageTitle">Contact Us</h1>

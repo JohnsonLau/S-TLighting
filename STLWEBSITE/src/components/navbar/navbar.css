@@ -15,7 +15,7 @@ body{
     top: 0;
     max-width: auto;
     z-index: 1;
-    background-color: white;
+    background: linear-gradient(to top, #ace0f9  0%,#fff1eb  100%); 
 }
 
 .logo {

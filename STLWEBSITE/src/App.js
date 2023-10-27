@@ -13,8 +13,6 @@ import ScrollToTopButton from './components/button/ScrollToTopButton';
 function App() {
   return (
     <div className='App'>
-
-      
       <Navbar/>
       <Home/>
       <About/>
