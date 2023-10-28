@@ -22,7 +22,7 @@ const Clients = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_a2589ol', 'template_ofah6ve', form.current, 'IyhpadH4R1oaYeu-9')
+        emailjs.sendForm('service_jc2bsof', 'template_08509ax', form.current, 'raionefVxG3xXWG5b')
         .then((result) => {
             console.log(result.text);
             e.target.reset();
