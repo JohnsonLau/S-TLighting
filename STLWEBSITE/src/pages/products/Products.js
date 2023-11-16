@@ -7,8 +7,6 @@ import etlin from './logos/etlin.png';
 import ndr from './logos/ndr.png';
 import alloy from './logos/alloy.png';
 import kuzco from './logos/kuzco.jpg';
-import corelite from './logos/cooper.png';
-import phillips from './logos/phillips.png';
 import lumenstar from './logos/lumenstar.png';
 import turo from './logos/turolight.png';
 import luxlogic from './logos/luxlogic.png';
@@ -68,19 +66,6 @@ const Products = () => {
                 <div className="grid-item">
                     <a href="https://www.turolight.com/" target="_blank" rel="noreferrer">
                         <img className="turo" src={turo} alt='turo'></img> 
-                    </a>
-                </div>
-                <div className="grid-item">
-                    <a href="https://www.lighting.philips.com/home" target="_blank" rel="noreferrer">
-                        <img className="logoimg" src={phillips} alt='phillips'></img>
-                        
-                        
-                    </a>
-                </div>
-                <div className="grid-item">
-                    <a href="https://www.cooperlighting.com/global/brands/corelite" target="_blank" rel="noreferrer">
-                        <img className="cooper" src={corelite} alt="corelite"></img>
-                        
                     </a>
                 </div>
         </div>
