@@ -14,7 +14,7 @@ const Products = () => {
     return (
         
         <section id="Products">
-            <h1 className="productHeader">Products and Line Cards</h1>
+            <h1 className="productHeader">Line Cards</h1>
          <div className='productGrid'>
                 <div className="grid-item">
                     <a href="https://plusriteusa.com/" target="_blank" rel="noreferrer">
