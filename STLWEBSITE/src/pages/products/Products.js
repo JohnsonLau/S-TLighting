@@ -7,7 +7,6 @@ import etlin from './logos/etlin.png';
 import ndr from './logos/ndr.png';
 import alloy from './logos/alloy.png';
 import kuzco from './logos/kuzco.jpg';
-
 import lumenstar from './logos/lumenstar.png';
 import turo from './logos/turolight.png';
 import luxlogic from './logos/luxlogic.png';

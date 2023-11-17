@@ -65,7 +65,7 @@ const Clients = () => {
 
                 <div id='contact'>
                     <h1 className="contactPageTitle">Contact Us</h1>
-                    <p className="contactDesc">Email or Call Us Today!<br></br>stlighting@hotmail.com<br></br> 604-802-6019 </p>
+                    <p className="contactDesc">Email or Call Us Today!<br></br>sales@stlighting.ca<br></br> 604-802-6019 </p>
                     <form className="contactForm" ref={form} onSubmit={sendEmail}>
                         <input required type="text" className="clientInputName" placeholder="Name/Company Name" name='your_name'/>
                         <input required type="email" className="clientInputEmail" placeholder="Email" name='your_email'/>
