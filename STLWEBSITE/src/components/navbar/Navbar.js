@@ -14,6 +14,7 @@ const Navbar = () => {
         <nav className="navbar">
           <img src={stlogo} alt="stlightinglogo" className="logo" />
         <div className="nav-links">
+          <Link activeClass="active" to="Gallery" className="linkItem" spy={true} smooth={true} offset={-100}>Gallery</Link>
           <Link activeClass="active" to="about" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
           <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Line Cards</Link>
@@ -34,6 +35,7 @@ const Navbar = () => {
 
         <img src={hamburger} alt="mobileMenu" className="hamburgerMenu" onClick={()=>setShowMenu(!showMenu)}/>
         <div className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
+        <Link activeClass="active" to="Gallery" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>Gallery</Link>
           <Link activeClass="active" to="about" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
           <Link activeClass="active" to="FAQ" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Line Cards</Link>

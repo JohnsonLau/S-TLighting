@@ -8,6 +8,7 @@ import Products from './pages/products/Products';
 import Clients from './pages/clients/Clients';
 import Footer from './components/footer/Footer';
 import ScrollToTopButton from './components/button/ScrollToTopButton';
+import Gallery from './pages/gallery/Gallery';
 
 // setup components
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <div className='App'>
       <Navbar/>
       <Home/>
+      <Gallery/>
       <About/>
       <FAQ/>
       <Products/>
