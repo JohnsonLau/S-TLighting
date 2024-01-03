@@ -13,6 +13,11 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.homeBackground {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./ikea.jpg');
+}
 .homeContent {
     min-height: calc(100vh - 4rem);
     width: 100vw;
@@ -21,18 +26,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center; 
 
 }
+
 
 h2{
   font-style: italic;
+
 }
 
-  .fade {
+  .fade1 {
+    color: white;
+    -webkit-text-stroke: 2px black;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
+    font-size: 64px;
+  background-color: grey;
+  }
+
+  .fade2 {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    font-size: 48px;
+  background-color: grey;
   }
   
   @keyframes fadeIn {

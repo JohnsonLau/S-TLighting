@@ -14,8 +14,8 @@ const Navbar = () => {
         <nav className="navbar">
           <img src={stlogo} alt="stlightinglogo" className="logo" />
         <div className="nav-links">
-          <Link activeClass="active" to="Gallery" className="linkItem" spy={true} smooth={true} offset={-100}>Gallery</Link>
           <Link activeClass="active" to="about" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
+          <Link activeClass="active" to="Gallery" className="linkItem" spy={true} smooth={true} offset={-100}>Gallery</Link>
           <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Line Cards</Link>
           <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
