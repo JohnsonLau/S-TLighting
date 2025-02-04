@@ -1,57 +1,31 @@
-
-import React, {useState} from "react";
+import React from "react";
 import './Faq.css';
 
 const FAQ = () => {
-   
-    const [activeIndex, setActiveIndex] = useState(null);
+  const faqItems = [
+    "Better Energy Usage And Long Life Span Of Minimum Of 50,000 Hours",
+    "Reduced Heat Output, Which Saves Money On Cooling Costs",
+    "Brighter Facilities Means Safer Facilities",
+    "A Well Lit Space Significantly Reduces Heavy Equipment Accidents, Losses And Damages To The Property",
+    "Reduced Maintenance Costs Since LEDs Last Much Longer",
+    "Zero UV Emission, Better For Eyes",
+    "Upgrading Into LED For Better Light, The Cost Will Be Paid Back By Itself"
+  ];
 
-    const toggleAccordion = (index) => {
-      setActiveIndex(index === activeIndex ? null : index);
-    };
-  
-    const faqData = [
-      {
-        question: "I'm an end-customer, can you purchase products directly from you?",
-        answer: "Yes.  We sell directly to end-customer.",
-      },
-      {
-        question: "Do you take credit card or debit card for payment?",
-        answer: "No. We only take cash or cheque upon product delivery.",
-      },
-      {
-        question: "Do you know about the BC Hydro Incentive program, and how to apply for it?",
-        answer: "Yes.  We are BC Hydro Alliance of Energy Professional.  We have assisted hundreds commercial customers to apply for the incentives.",
-      },
-      {
-        question: "Do you take credit card or debit card for payment?",
-        answer: "Unfortunately, we only take cash or cheque upon product delivery.",
-      },
-      {
-        question: "Does the lighting product come with warranty?",
-        answer: "Yes, warranty is provided by the lighting manufacturer.",
-      },
-    ];
-   
-    return (
-        <section id="FAQ">
-          <h1 className="faqHeader">Frequently Asked Questions</h1>
-    
-          {faqData.map((faq, index) => (
-            <div key={index}>
-              <button
-                className={`accordion ${index === activeIndex ? "active" : ""}`}
-                onClick={() => toggleAccordion(index)}>
-                {faq.question}
-              </button>
-              <div className={`panel ${index === activeIndex ? "open" : ""}`}>
-                <p>{faq.answer}</p>
-              </div>
-            </div>
+  return (
+    <section id='FAQ'>
+      <div className='content'>
+        <h1 className="faqHeader">Benefits of LED Lighting</h1>
+        <ul className="faqList">
+          {faqItems.map((item, index) => (
+            <li key={index} className="faqItem">
+              {item}
+            </li>
           ))}
-        </section>
-      );
-    };
-    
-    export default FAQ;
-  
+        </ul>
+      </div>
+    </section>
+  );
+};
+
+export default FAQ;

@@ -52,7 +52,8 @@ const Testimonials = () => {
           <div class="projcard-title">Atlas Roofing</div>
           <div class="projcard-subtitle">Bryan - Plant Engineer</div>
           <div class="projcard-bar"></div>
-          <div class="projcard-description">"I would highly recommend any light upgrading project with Wing / S & T Lighting. There are many reasons: No.1 on the list was service, Wing excelled in determining what I needed and when. No.2 was his ability to provide me with all the bulbs and fixtures in timeframe sooner than all other vendors. No.3 was his costing. Not only did he astound with pricing but also simplified what savings I could expect, in easy to understand terms. No.4 was flexibility. We encountered a situation where the person doing the task quit. Wing was able to fill the gap with staff so the job was completed on time, and within budget."</div>
+          <div class="projcard-description">"I would highly recommend any light upgrading project with Wing / S & T Lighting. There are many reasons: No.1 on the list was service, Wing excelled in determining what I needed and when. 
+            No.2 was his ability to provide me with all the bulbs and fixtures in timeframe sooner than all other vendors. No.3 was his costing. Not only did he astound with pricing but also simplified what savings I could expect, in easy to understand terms. No.4 was flexibility. We encountered a situation where the person doing the task quit. Wing was able to fill the gap with staff so the job was completed on time, and within budget."</div>
         </div>
       </div>
     </div>

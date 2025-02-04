@@ -1,12 +1,11 @@
- /* Style the buttons that are used to open and close the accordion panel */
- .accordion {
+/* Style the buttons that are used to open and close the accordion panel */
+ .faqItem {
     background: linear-gradient(to top, #ace0f9  0%,#fff1eb  100%); 
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 2rem;
-    width: 66vw;
-    text-align: left;
+    text-align: center;
     border: none;
     outline: none;
     font-size: large;
@@ -36,11 +35,11 @@
   }
 
 .faqHeader {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     justify-content: center;
     text-align: center;
-   
+    color: #333;
     border-bottom: 5px solid black;
 }
 
@@ -54,3 +53,31 @@
     align-items: center;
     justify-content: center;
 }
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.faqList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faqItem {
+  font-size: 1.2rem;
+  color: #555;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.faqItem:hover {
+  transform: translateY(-5px);
+}
+
