@@ -8,7 +8,7 @@ const FAQ = () => {
     "Brighter Facilities Means Safer Facilities",
     "A Well Lit Space Significantly Reduces Heavy Equipment Accidents, Losses And Damages To The Property",
     "Reduced Maintenance Costs Since LEDs Last Much Longer",
-    "Zero UV Emission, Better For Eyes",
+    "Zero UV Emission, No Flicker, Better For Eyes",
     "Upgrading Into LED For Better Light, The Cost Will Be Paid Back By Itself"
   ];
 
