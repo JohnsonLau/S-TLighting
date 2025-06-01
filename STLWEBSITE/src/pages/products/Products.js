@@ -37,16 +37,18 @@ const Products = () => {
                     <img className="etlin" src = {etlin} alt='etlin'></img>
                     </a>
                 </div>
-                <div className="grid-item">
+               /* <div className="grid-item">
                     <a href="https://ndrelectric.com/" target="_blank" rel="noreferrer">
                     <img className="logoimg" src = {ndr} alt='ndr'></img>
                     </a>
                 </div>
+                
                 <div className="grid-item">
                     <a href="https://www.luxlogiclighting.com/" target="_blank" rel="noreferrer">
                         <img className="logoimg" src={luxlogic} alt='luxlogic'></img>
                     </a>
                 </div>
+                */
                 <div className="grid-item">
                     <a href="https://lumenstarled.com/" target="_blank" rel="noreferrer">
                         <img className="logoimg" src={lumenstar} alt='lumenstar'></img>
