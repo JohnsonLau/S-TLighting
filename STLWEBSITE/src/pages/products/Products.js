@@ -23,6 +23,7 @@ const Products = () => {
                    
                 </div>
                 <div className="grid-item">
+        //updated website link
                     <a href="https://naturaled.com/" target="_blank" rel="noreferrer">
                         <img className="natura" src={natura} alt='natura'></img>
                     </a>
