@@ -4,12 +4,11 @@ import cna from './logos/cna.png';
 import plusrite from './logos/plusrite.png';
 import natura from './logos/natura.png';
 import etlin from './logos/etlin.png';
-// import ndr from './logos/ndr.png';
 import alloy from './logos/alloy.png';
 import kuzco from './logos/kuzco.jpg';
 import lumenstar from './logos/lumenstar.png';
 import turo from './logos/turolight.png';
-// import luxlogic from './logos/luxlogic.png';
+
 const Products = () => {
     return (
         
@@ -23,7 +22,6 @@ const Products = () => {
                    
                 </div>
                 <div className="grid-item">
-        //updated website link
                     <a href="https://naturaled.com/" target="_blank" rel="noreferrer">
                         <img className="natura" src={natura} alt='natura'></img>
                     </a>
