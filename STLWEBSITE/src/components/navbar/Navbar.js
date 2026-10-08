@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Line Cards</Link>
           <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
           <Link activeClass="active" to="contactPage" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
-          <a  activeClass="active" className="linkItem" href="https://www.mynaturaled.com/casestudy.html" target="_blank" rel="noreferrer">
+          <a  activeClass="active" className="linkItem" href="https://naturaled.com/resources/case-studies/" target="_blank" rel="noreferrer">
 
           Case Study
           </a>
