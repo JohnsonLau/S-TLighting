@@ -191,6 +191,11 @@
         background-position: center;
     }
 
+    .homeBrand {
+        font-size: clamp(1.8rem, 9vw, 2.5rem);
+        white-space: nowrap;
+    }
+
     .homeEyebrow {
         max-width: 22rem;
         font-size: 0.72rem;
