@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 import './navbar.css'
 import stlogo from '../../images/stlogo.png';
 import contact from '../../images/contact.png';
@@ -15,24 +14,22 @@ const Navbar = () => {
             <img src={stlogo} alt="stlightinglogo" className="logo" />
           </div>
         <div className="nav-links">
-          <Link activeClass="active" to="about" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
-          <Link activeClass="active" to="Gallery" className="linkItem" spy={true} smooth={true} offset={-100}>Gallery</Link>
-          <Link activeClass="active" to="FAQ" className="linkItem" spy={true} smooth={true} offset={-50}>LED Benefits</Link>
-          <Link activeClass="active" to="Products" className="linkItem" spy={true} smooth={true} offset={-50}>Line Cards</Link>
-          <Link activeClass="active" to="Testimonials" className="linkItem" spy={true} smooth={true} offset={-50}>Testimonials</Link>
-          <Link activeClass="active" to="contactPage" className="linkItem" spy={true} smooth={true} offset={-50}>Clients</Link>
-          <a  activeClass="active" className="linkItem" href="https://naturaled.com/resources/case-studies/" target="_blank" rel="noreferrer">
+            <a href="#about" className="linkItem">About Us</a>
+            <a href="#Gallery" className="linkItem">Gallery</a>
+            <a href="#FAQ" className="linkItem">LED Benefits</a>
+            <a href="#Products" className="linkItem">Line Cards</a>
+            <a href="#Testimonials" className="linkItem">Testimonials</a>
+            <a href="#Clients" className="linkItem">Clients</a>
+          <a className="linkItem" href="https://naturaled.com/resources/case-studies/" target="_blank" rel="noreferrer">
 
           Case Study
           </a>
         </div>
 
-        <button className="contactButton" onClick={ () => {
-          document.getElementById('contact').scrollIntoView({behavior : 'smooth'}); 
-        }}>
+        <a className="contactButton" href="#contact">
           <img src={contact} alt="contactus" className="contactImg" />
           Contact Us
-        </button>
+        </a>
 
         <button
           className="mobileMenuButton"
@@ -45,23 +42,14 @@ const Navbar = () => {
           <span className="hamburgerIcon" aria-hidden="true" />
         </button>
         <div id="mobile-navigation" className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
-          <Link activeClass="active" to="about" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
-          <Link activeClass="active" to="Gallery" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>Gallery</Link>
-          <Link activeClass="active" to="FAQ" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>FAQ</Link>
-          <Link activeClass="active" to="Products" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Line Cards</Link>
-          <Link activeClass="active" to="Testimonials" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Testimonials</Link> 
-         <Link activeClass="active" to="Clients" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Clients</Link>
-         <button
-           className="linkItemMobile"
-           type="button"
-           onClick={() => {
-             document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-             setShowMenu(false);
-           }}
-         >
-           Contact Us
-         </button>
-         <a  activeClass="active" className="linkItemMobile" href="https://naturaled.com/resources/case-studies/" target="_blank" rel="noreferrer">
+          <a href="#about" className="linkItemMobile" onClick={() => setShowMenu(false)}>About Us</a>
+          <a href="#Gallery" className="linkItemMobile" onClick={() => setShowMenu(false)}>Gallery</a>
+          <a href="#FAQ" className="linkItemMobile" onClick={() => setShowMenu(false)}>FAQ</a>
+          <a href="#Products" className="linkItemMobile" onClick={() => setShowMenu(false)}>Line Cards</a>
+          <a href="#Testimonials" className="linkItemMobile" onClick={() => setShowMenu(false)}>Testimonials</a>
+          <a href="#Clients" className="linkItemMobile" onClick={() => setShowMenu(false)}>Clients</a>
+          <a href="#contact" className="linkItemMobile" onClick={() => setShowMenu(false)}>Contact Us</a>
+         <a className="linkItemMobile" href="https://naturaled.com/resources/case-studies/" target="_blank" rel="noreferrer">
 
           Case Study
           </a>

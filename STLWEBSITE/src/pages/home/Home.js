@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
 import "./Home.css";
 
 const Home = () => (
@@ -21,10 +20,10 @@ const Home = () => (
                 Thoughtful lighting solutions for commercial and industrial spaces,
                 backed by local expertise you can count on.
             </p>
-            <ScrollLink className="homeCta" to="Products" smooth duration={500} offset={-50}>
+            <a className="homeCta" href="#Products">
                 Explore our line cards
                 <span aria-hidden="true">&rarr;</span>
-            </ScrollLink>
+            </a>
             <p className="homeLocation">Proudly serving Vancouver and the Lower Mainland</p>
         </div>
         <div className="homeTrustCard">

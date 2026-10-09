@@ -94,7 +94,7 @@ const Gallery = () => {
     
         return (
            
-                <div className='Gallery'>
+                <div id="Gallery" className='Gallery'>
                   
     
                  
