@@ -150,12 +150,41 @@ body {
     cursor: pointer;
 }
 
-.hamburgerMenu {
+.hamburgerIcon {
+    position: relative;
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    object-fit: cover;
-    filter: brightness(0) invert(1);
+    width: 1.4rem;
+    height: 2px;
+    border-radius: 2px;
+    background: #f5cc78;
+    box-shadow: 0 -7px #f5cc78, 0 7px #f5cc78;
+    transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: inherit;
+    background: #f5cc78;
+    content: "";
+    transition: transform 160ms ease;
+}
+
+.mobileMenuButton[aria-expanded="true"] .hamburgerIcon {
+    background: transparent;
+    box-shadow: none;
+}
+
+.mobileMenuButton[aria-expanded="true"] .hamburgerIcon::before {
+    transform: rotate(45deg);
+}
+
+.mobileMenuButton[aria-expanded="true"] .hamburgerIcon::after {
+    transform: rotate(-45deg);
 }
 
 .mobMenu {
@@ -224,7 +253,10 @@ body {
     .linkItem,
     .linkItem::after,
     .contactButton,
-    .linkItemMobile {
+    .linkItemMobile,
+    .hamburgerIcon,
+    .hamburgerIcon::before,
+    .hamburgerIcon::after {
         transition: none;
     }
 }

@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import './navbar.css'
 import stlogo from '../../images/stlogo.png';
 import contact from '../../images/contact.png';
-import hamburger from './menu.png';
 
 const Navbar = () => {
   
@@ -43,7 +42,7 @@ const Navbar = () => {
           aria-controls="mobile-navigation"
           onClick={() => setShowMenu(!showMenu)}
         >
-          <img src={hamburger} alt="" className="hamburgerMenu" />
+          <span className="hamburgerIcon" aria-hidden="true" />
         </button>
         <div id="mobile-navigation" className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
           <Link activeClass="active" to="about" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
