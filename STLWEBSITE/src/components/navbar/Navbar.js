@@ -12,7 +12,9 @@ const Navbar = () => {
   return(
     
         <nav className="navbar">
-          <img src={stlogo} alt="stlightinglogo" className="logo" />
+          <div className="logoMark">
+            <img src={stlogo} alt="stlightinglogo" className="logo" />
+          </div>
         <div className="nav-links">
           <Link activeClass="active" to="about" className="linkItem" spy={true} smooth={true} offset={-100}>About Us</Link>
           <Link activeClass="active" to="Gallery" className="linkItem" spy={true} smooth={true} offset={-100}>Gallery</Link>
@@ -33,14 +35,33 @@ const Navbar = () => {
           Contact Us
         </button>
 
-        <img src={hamburger} alt="mobileMenu" className="hamburgerMenu" onClick={()=>setShowMenu(!showMenu)}/>
-        <div className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
-        <Link activeClass="active" to="Gallery" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>Gallery</Link>
+        <button
+          className="mobileMenuButton"
+          type="button"
+          aria-label={showMenu ? "Close menu" : "Open menu"}
+          aria-expanded={showMenu}
+          aria-controls="mobile-navigation"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <img src={hamburger} alt="" className="hamburgerMenu" />
+        </button>
+        <div id="mobile-navigation" className="mobMenu" style={{display: showMenu? 'flex' : 'none'}}>
           <Link activeClass="active" to="about" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>About Us</Link>
+          <Link activeClass="active" to="Gallery" className="linkItemMobile" spy={true} smooth={true} offset={-100} duration={500} onClick={()=>setShowMenu(!showMenu)}>Gallery</Link>
           <Link activeClass="active" to="FAQ" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>FAQ</Link>
           <Link activeClass="active" to="Products" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Line Cards</Link>
           <Link activeClass="active" to="Testimonials" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Testimonials</Link> 
          <Link activeClass="active" to="Clients" className="linkItemMobile" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setShowMenu(!showMenu)}>Clients</Link>
+         <button
+           className="linkItemMobile"
+           type="button"
+           onClick={() => {
+             document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+             setShowMenu(false);
+           }}
+         >
+           Contact Us
+         </button>
          <a  activeClass="active" className="linkItemMobile" href="https://naturaled.com/resources/case-studies/" target="_blank" rel="noreferrer">
 
           Case Study

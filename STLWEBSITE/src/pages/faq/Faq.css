@@ -1,83 +1,62 @@
-/* Style the buttons that are used to open and close the accordion panel */
- .faqItem {
-    background: linear-gradient(to top, #ace0f9  0%,#fff1eb  100%); 
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 2rem;
-    text-align: center;
-    border: none;
-    outline: none;
-    font-size: large;
-    margin: 0.25rem;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-   .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 0rem;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    
-  } 
+#FAQ {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+    background: #f7f7f4;
+}
 
-   /* Style for the open panel */
-   .panel.open {
-    margin: 0.5rem;
-    display: flex; 
-    transition: height 2s ease-out;
-    font-size: large;
-  }
+#FAQ .content {
+    width: min(100%, 56rem);
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
 
 .faqHeader {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-align: center;
-    color: #333;
-    border-bottom: 5px solid black;
-}
-
-#FAQ {
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+    margin: 0 auto 2rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 3px solid #f5cc78;
+    color: #17232d;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
 }
 
 .faqList {
-  list-style-type: none;
-  padding: 0;
+    display: grid;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .faqItem {
-  font-size: 1.2rem;
-  color: #555;
-  background-color: #f9f9f9;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    margin: 0;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #e4e6e5;
+    border-left: 4px solid #f5cc78;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(23, 35, 45, 0.045);
+    color: #34404a;
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+    font-weight: 550;
+    line-height: 1.6;
+    text-align: left;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .faqItem:hover {
-  transform: translateY(-5px);
+    transform: translateY(-2px);
+    border-color: #e8c16f;
+    box-shadow: 0 0.75rem 1.75rem rgba(23, 35, 45, 0.09);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .faqItem {
+        transition: none;
+    }
+}

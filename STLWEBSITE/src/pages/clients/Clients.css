@@ -1,215 +1,234 @@
+.contactPage {
+    box-sizing: border-box;
+    padding: clamp(3rem, 7vw, 6rem) 1.5rem;
+    background: #f7f7f4;
+}
+
 #Clients {
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
+    box-sizing: border-box;
+    width: min(100%, 72rem);
+    min-height: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-margin-top: 5.5rem;
 }
 
-.clientTitlePage {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
-    border-bottom: 5px solid black;
-
-}
+.clientTitlePage,
 .contactPageTitle {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 5px solid black;
-
-}
-
-.clientNames, .contactDesc {
-    font-weight: 300;
-    font-size: 3rem;
-    font-style: italic;
-    justify-content: center;
+    margin: 0 auto 1.5rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 3px solid #f5cc78;
+    color: #17232d;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
     text-align: center;
 }
 
-.image-carousel {
+.clientNames,
+.contactDesc {
+    margin: 0 auto 1.5rem;
+    color: #65717a;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-weight: 400;
+    line-height: 1.65;
+    text-align: center;
+}
+
+.scroll-container {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0.75rem;
+    border: 1px solid #e4e6e5;
+    border-radius: 1rem;
+    background: #fff;
+    scrollbar-color: #d6a94d #f1f1ec;
+    scrollbar-width: thin;
+}
+
+.scroll-container:focus-visible {
+    outline: 3px solid rgba(245, 204, 120, 0.65);
+    outline-offset: 3px;
+}
+
+.clientLogoCarousel {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.clientLogoTrack {
     display: flex;
-    justify-content: center;
+    width: max-content;
+    animation: clientLogoScroll 72s linear infinite;
+}
+
+.clientLogoTrack:nth-child(2) {
+    animation-direction: reverse;
+}
+
+.clientImgs {
+    display: flex;
+    width: max-content;
+    flex: 0 0 auto;
     align-items: center;
-    margin: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    max-height: 300px;
-  }
+    gap: 0.85rem;
+    padding-right: 0.85rem;
+}
 
-  .kuzco, .etlin, .turo {
-    padding-top: 2rem;
-  }
+@keyframes clientLogoScroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
 
-  .cooper, .plusrite {
-    padding-top: 1rem;
-  }
-  
-  button {
-    margin: 0 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-    background: #333;
-    color: #fff;
-    border: none;
-  }
-  
-  .submitMessage:hover {
-    color: lightblue;
-  }
- 
-
-/* .clientImgs {
-  padding: 1rem;
-  text-align: center;
-  display: grid;
-  grid-template-columns:auto auto auto auto;
+.scroll-container:hover .clientLogoTrack,
+.scroll-container:focus-within .clientLogoTrack {
+    animation-play-state: paused;
 }
 
 .clientLogoImg {
-    object-fit: cover;
-    width: 7rem;
-    min-width: 3rem;
-    margin: auto;
-    padding: 2rem;
+    display: block;
+    width: 9rem;
+    height: 5.5rem;
+    max-width: none;
+    max-height: none;
+    padding: 0.5rem;
+    border: 1px solid #e4e6e5;
+    border-radius: 0.65rem;
+    background: #fff;
+    object-fit: contain;
+}
 
-} */
+#contact {
+    box-sizing: border-box;
+    width: min(100%, 48rem);
+    margin: clamp(3rem, 7vw, 5rem) auto 0;
+    padding: clamp(1.5rem, 5vw, 3rem);
+    border: 1px solid #e4e6e5;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 0.75rem 2rem rgba(23, 35, 45, 0.06);
+    scroll-margin-top: 6rem;
+}
+
+.contactPageTitle {
+    margin-bottom: 1rem;
+}
+
+.contactDesc {
+    margin-bottom: 1.5rem;
+    color: #34404a;
+}
 
 .contactForm {
-    margin: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    max-width: 60rem;;
-}
-
-.clientInputName, .clientInputEmail, .clientMessage {
-    font-size: medium;
     width: 100%;
     max-width: 40rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: lightblue;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1rem auto 0;
 }
 
-::placeholder {
-    color: rgb(40, 40, 40);
+.clientInputName,
+.clientInputEmail,
+.clientMessage {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid #d7dcde;
+    border-radius: 0.6rem;
+    background: #f7f7f4;
+    color: #17232d;
+    font: inherit;
+    font-size: 1rem;
+}
+
+.clientInputName::placeholder,
+.clientInputEmail::placeholder,
+.clientMessage::placeholder {
+    color: #65717a;
+}
+
+.clientInputName:focus,
+.clientInputEmail:focus,
+.clientMessage:focus {
+    border-color: #b78226;
+    outline: 3px solid rgba(245, 204, 120, 0.35);
+}
+
+.clientMessage {
+    resize: vertical;
 }
 
 .submitMessage {
-    background: white;
-    border:none;
-    padding: 0.1rem 4rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid grey;
+    align-self: flex-start;
+    min-height: 2.8rem;
+    margin: 0.25rem 0 0;
+    padding: 0.25rem 1.5rem;
+    border: 1px solid #f5cc78;
+    border-radius: 999px;
+    background: #f5cc78;
+    color: #17232d;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.submitMessage:hover {
+    transform: translateY(-1px);
+    background: #ffdfa0;
+}
+
+.submitMessage:focus-visible {
+    outline: 3px solid #b78226;
+    outline-offset: 3px;
 }
 
 .submitText {
-    color: black;
-    font-size: medium;
+    margin: 0;
+    color: inherit;
+    font-size: 1rem;
 }
 
-@media screen and (max-width: 720px) {
-    .clientTitlePage,
-    .contactPageTitle {
-        font-size: 1.5rem;
+@media (max-width: 600px) {
+    .contactPage {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
-    .clientNames,
-    .contactDesc {
-        font-size: 1.5rem;
+
+    #contact {
+        padding: 1.25rem;
     }
+
     .clientLogoImg {
-        width: 4rem;
-        min-width: 1.5rem;
-    }
-    .clientInputName,
-    .clientInputEmail,
-    .clientMessage {
-        font-size: x-small;
+        width: 7.5rem;
+        height: 4.75rem;
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .clientLogoTrack {
+        animation: none;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  div.scroll-container {
-    background: #ace0f9; 
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-  }
-  
-  div.scroll-container img {
-    padding: 10px;
-  }
+    .clientImgs[aria-hidden="true"] {
+        display: none;
+    }
+
+    .scroll-container {
+        overflow-x: auto;
+    }
+
+    .submitMessage {
+        transition: none;
+    }
+}

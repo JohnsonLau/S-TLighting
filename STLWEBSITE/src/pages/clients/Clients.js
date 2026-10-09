@@ -14,6 +14,26 @@ import richmond from './ClientLogos/richmond.jpg';
 import runners from './ClientLogos/runnersden.jpg';
 import emailjs from '@emailjs/browser';
 
+const clientLogos = [
+    { image: abc, alt: "Abc dollar store" },
+    { image: atlas, alt: "Atlas roofing" },
+    { image: dollar, alt: "dollarstore" },
+    { image: grill, alt: "Coquitlam grill" },
+    { image: langley, alt: "Langley Industrial Park" },
+    { image: newpacific, alt: "new pacific supermarket" },
+    { image: nofrills, alt: "Nofrills" },
+    { image: oktire, alt: "OK Tire" },
+    { image: pharmasave, alt: "Pharmasave" },
+    { image: poco, alt: "Port Coquitlam Industrial Park" },
+    { image: richmond, alt: "Richmond Warehouse" },
+    { image: runners, alt: "Port Moody Runners Den" },
+];
+
+const clientLogoRows = [
+    clientLogos.filter((_, index) => index % 2 === 0),
+    clientLogos.filter((_, index) => index % 2 === 1),
+];
+
 
 const Clients = () => {
 
@@ -42,25 +62,26 @@ const Clients = () => {
                 <h1 className="clientTitlePage">Our Clients</h1>
                 <p className="clientNames">We have had the opportunity to work with these incredible companies.</p>
                
-                <div class="scroll-container">
-                <div className="clientImgs">
-
-                <img src = {abc} alt="Abc dollar store" className="clientLogoImg"/>
-                <img src = {atlas} alt="Atlas roofing" className="clientLogoImg"/>
-                <img src = {dollar} alt="dollarstore" className="clientLogoImg"/>
-                <img src = {grill} alt="Coquitlam grill" className="clientLogoImg"/>
-                <img src = {langley} alt="Langley Industrial Park" className="clientLogoImg"/>
-                <img src = {newpacific} alt="new pacific supermarket" className="clientLogoImg"/>
-                <img src = {nofrills} alt="Nofrills" className="clientLogoImg"/>
-                <img src = {oktire} alt="OK Tire" className="clientLogoImg"/>
-                <img src = {pharmasave} alt="Pharmasave" className="clientLogoImg"/>
-                <img src = {poco} alt="Port Coquitlam Industrial Park" className="clientLogoImg"/>
-                <img src = {richmond} alt="Richmond Warehouse" className="clientLogoImg"/>
-                <img src = {runners} alt="Port Moody Runners Den" className="clientLogoImg"/>
-
-            </div>
-            
-            </div>
+                <div className="scroll-container" role="region" aria-label="Client logos" tabIndex={0}>
+                    <div className="clientLogoCarousel">
+                        {clientLogoRows.map((logos, rowIndex) => (
+                            <div className="clientLogoTrack" key={rowIndex}>
+                                {[false, true].map((isDuplicate) => (
+                                    <div className="clientImgs" aria-hidden={isDuplicate || undefined} key={String(isDuplicate)}>
+                                        {logos.map(({ image, alt }) => (
+                                            <img
+                                                src={image}
+                                                alt={isDuplicate ? "" : alt}
+                                                className="clientLogoImg"
+                                                key={alt}
+                                            />
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
             <p className="clientNames">And many more!</p>
 
                 <div id='contact'>

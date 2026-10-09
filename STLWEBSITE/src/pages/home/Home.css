@@ -1,66 +1,224 @@
-.homeContent {
-    justify-content: center;
-    text-align: center;
-    height: 40vh;
-    width: auto;
-    margin: 0;
-   
-    
-    
-}
-.intro{
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.App {
+    color: #34404a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .homeBackground {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('./ikea.jpg');
-}
-.homeContent {
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
-    margin: 0 auto;
+    position: relative;
+    isolation: isolate;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center; 
-
+    min-height: max(36rem, calc(100svh - 5.5rem));
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5rem clamp(1.5rem, 8vw, 8rem) 7rem;
+    color: #fff;
+    background-color: #17232d;
+    background-image:
+        linear-gradient(90deg, rgba(10, 20, 29, 0.9) 0%, rgba(10, 20, 29, 0.72) 46%, rgba(10, 20, 29, 0.18) 100%),
+        linear-gradient(0deg, rgba(10, 20, 29, 0.38), transparent 35%),
+        url("./ikea.jpg");
+    background-size: cover;
+    background-position: center 48%;
 }
 
-
-h2{
-  font-style: italic;
-
+.homeContent {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 72rem);
+    margin: 0 auto;
+    text-align: center;
 }
 
-  .fade1 {
-    color: white;
-    -webkit-text-stroke: 2px black;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
-    font-size: 64px;
-  background-color: grey;
-  }
+.homeBrand {
+    margin: 0 0 0.85rem;
+    color: #fff;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 0.015em;
+    line-height: 1.2;
+}
 
-  .fade2 {
-    color: white;
-    -webkit-text-stroke: 2px black;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
-    font-size: 48px;
-  background-color: grey;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
+.homeBrandS {
+    color: #17478f;
+}
+
+.homeBrandT {
+    color: #df789d;
+}
+
+.homeEyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    margin: 0 0 1.4rem;
+    color: #f5cc78;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.homeEyebrowDot {
+    width: 0.55rem;
+    height: 0.55rem;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: #f5cc78;
+    box-shadow: 0 0 1rem rgba(245, 204, 120, 0.8);
+}
+
+.homeTitle {
+    max-width: 13ch;
+    margin: 0 auto;
+    font-size: clamp(3.25rem, 7.2vw, 6.5rem);
+    font-weight: 750;
+    letter-spacing: -0.065em;
+    line-height: 0.99;
+    text-wrap: balance;
+}
+
+.homeTitle span {
+    color: #f5cc78;
+}
+
+.homeDescription {
+    max-width: 34rem;
+    margin: 1.6rem auto 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+    line-height: 1.75;
+}
+
+.homeCta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.6rem;
+    min-height: 3.5rem;
+    margin-top: 2rem;
+    padding: 0.2rem 1.5rem;
+    border: 1px solid #f5cc78;
+    border-radius: 999px;
+    background: #f5cc78;
+    color: #17232d;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.homeCta:hover {
+    transform: translateY(-2px);
+    background: #ffdfa0;
+    color: #17232d;
+}
+
+.homeCta:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+}
+
+.homeCta span {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.homeLocation {
+    margin: 1.2rem auto 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+.homeTrustCard {
+    position: absolute;
+    right: clamp(1.5rem, 8vw, 8rem);
+    bottom: 2.5rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    max-width: calc(100% - 3rem);
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    background: rgba(14, 25, 34, 0.72);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+}
+
+.homeTrustMark {
+    display: grid;
+    width: 2.8rem;
+    height: 2.8rem;
+    flex: 0 0 auto;
+    place-items: center;
+    border: 1px solid rgba(245, 204, 120, 0.65);
+    border-radius: 50%;
+    color: #f5cc78;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.homeTrustCard p {
+    display: grid;
+    gap: 0.25rem;
+    margin: 0;
+}
+
+.homeTrustCard strong {
+    font-size: 0.9rem;
+}
+
+.homeTrustCard p span {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.78rem;
+}
+
+@media (max-width: 600px) {
+    .homeBackground {
+        min-height: max(38rem, calc(100svh - 5rem));
+        align-items: flex-start;
+        padding: 6.5rem 1.5rem 9rem;
+        background-image:
+            linear-gradient(90deg, rgba(10, 20, 29, 0.82), rgba(10, 20, 29, 0.56)),
+            linear-gradient(0deg, rgba(10, 20, 29, 0.65), transparent 55%),
+            url("./ikea.jpg");
+        background-position: center;
     }
-    100% {
-      opacity: 1;
+
+    .homeEyebrow {
+        max-width: 22rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
     }
-  }
 
+    .homeTitle {
+        font-size: clamp(3.2rem, 13vw, 4.5rem);
+    }
 
+    .homeDescription {
+        margin-top: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .homeTrustCard {
+        right: 1.5rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        width: auto;
+        max-width: none;
+        box-sizing: border-box;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .homeCta {
+        transition: none;
+    }
+}

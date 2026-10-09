@@ -5,7 +5,7 @@ import './footer.css';
 const Footer = () => {
     return(
         <div className="footer">
-            S & T Lighting © 2023 | Proudly Partnered with 
+            S & T Lighting © 2026 | Proudly Partnered with 
            <img className="footerImg" src = {bchydro} alt="footerlogo"  /> 
        </div> 
         
