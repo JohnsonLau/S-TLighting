@@ -189,11 +189,13 @@ body {
 
 .mobMenu {
     position: absolute;
-    top: calc(100% - 0.1rem);
+    top: calc(100% + 0.5rem);
     right: clamp(1rem, 5vw, 4rem);
     display: flex;
+    box-sizing: border-box;
     min-width: 14rem;
-    max-height: calc(100svh - 5.5rem);
+    max-height: calc(100vh - 6.5rem);
+    max-height: calc(100svh - 6.5rem);
     height: fit-content;
     flex-direction: column;
     overflow-y: auto;
@@ -206,6 +208,8 @@ body {
 
 .linkItemMobile {
     width: 100%;
+    min-height: 2.75rem;
+    box-sizing: border-box;
     margin: 0.1rem 0;
     padding: 0.75rem 1rem;
     border: 0;
@@ -239,6 +243,18 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .navbar {
+        height: 4.5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        gap: 1rem;
+    }
+
+    .logoMark {
+        width: 3rem;
+        height: 3rem;
+    }
+
     .mobileMenuButton {
         display: flex;
     }
@@ -246,6 +262,14 @@ body {
     .nav-links,
     .contactButton {
         display: none;
+    }
+
+    .mobMenu {
+        right: 1rem;
+        width: min(24rem, calc(100vw - 2rem));
+        min-width: 0;
+        max-height: calc(100vh - 5.5rem);
+        max-height: calc(100svh - 5.5rem);
     }
 }
 
